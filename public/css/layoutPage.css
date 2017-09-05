@@ -1,0 +1,19 @@
+.banner, .asideleft, .asideright, .content, .footer{
+    float: left;
+    box-sizing: border-box;
+}
+.banner{
+    width: 100%;
+}
+.asideleft{
+    width: 20%;
+}
+.asideright{
+    width: 20%;
+}
+.content{
+    width: 60%;
+}
+.footer{
+    width: 100%;
+}

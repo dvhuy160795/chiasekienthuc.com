@@ -10,7 +10,9 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // action body
+        $bootstrap = $this -> getInvokeArg ( 'bootstrap' ) ;
+        $view = $bootstrap -> getResource ( 'category' ) ;
+        var_dump($view);
     }
 
 

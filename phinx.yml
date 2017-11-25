@@ -17,7 +17,7 @@ environments:
     development:
         adapter: mysql
         host: localhost
-        name: chiasekienthuc
+        name: watchdailyTV
         user: root
         pass: '1'
         port: 3306

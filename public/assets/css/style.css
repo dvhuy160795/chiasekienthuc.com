@@ -16,9 +16,9 @@ a:hover, a:active, a:focus{text-decoration:none; color:#000}
 input[type=text], input[type=password], textarea{border:1px solid #ddd; padding:5px}
 input[type=submit]
 h1, h2, h4, h5, h6{font-weight:normal; margin:0 0 15px}
-h3{color:#202021; font-size:12px; font-weight:bold; margin-bottom:2px; line-height:13px}
+h3{color:#202021; font-size:16px; font-weight:bold; margin-bottom:5px; line-height:16px; margin-top:5px;}
 h2{font-size:25px; line-height:30px}
-img{max-width:100%; height:auto}
+img{width:100%; height:auto}
 .alignleft{float:left; margin-left:0px}
 .aligncenter{display:block; margin:10px auto}
 .alignright{float:right; margin-left:10px}
@@ -49,6 +49,7 @@ div{overflow:hidden}
 .twitter{background:url("images/social_icons.png") no-repeat scroll 0 0 rgba(0,0,0,0)}
 .facebook{background:url("images/social_icons.png") no-repeat scroll -37px 0px rgba(0,0,0,0)}
 .feed{background:url("images/social_icons.png") no-repeat scroll -73px 0px rgba(0,0,0,0)}
+.user{background:url("images/user_icon.jpg") no-repeat scroll -93px -9px rgba(0,0,0,0); background-size: 120px 120px; border-radius: 10px}
 .search{}
 .search #search_form{}
 .search #s{width:87%}
@@ -56,14 +57,14 @@ div{overflow:hidden}
 .main_menu_area{overflow:visible; background:#0D0E0F; min-height:50px}
 .main_menu_area ul{margin:0; padding:0; list-style:none}
 .main_menu_area ul li{float:left; position:relative}
-.main_menu_area ul li a{color:#FFF; display:block; font-family:Arial, Helvetica, sans-serif; font-size:15px; padding:18px 18.7px}
+.main_menu_area ul li a{color:#FFF; display:block; font-family:Arial, Helvetica, sans-serif; font-size:20px; padding:18px 18.7px}
 .main_menu_area ul li a:hover{background:#CF0000}
 #nav li ul{transition:all 0.3s ease 0s; -moz-transition:all 0.3s ease 0s; -webkit-transition:all 0.3s ease 0s; -o-transition:all 0.3s ease 0s; -ms-transition:all 0.3s ease 0s}
 /* dropdown css level one*/
 .main_menu_area ul li ul{background:none repeat scroll 0 0 #0D0E0F; top:100px; position:absolute; width:215px; z-index:99999; right:-99999px}
-.main_menu_area ul li ul li{float:none; position:relative}
+.main_menu_area ul li ul li{float:none; position:relative;}
 .main_menu_area ul >li:hover >ul{left:0px; top:49px}
-.main_menu_area ul li ul li a{ font-weight:bold}
+.main_menu_area ul li ul li a{ font-weight:bold;font-size:15px;}
 .main_menu_area ul li ul li a:hover{}
 /* dropdown css level two*/
 .main_menu_area ul li ul li ul{background:none repeat scroll 0 0 #0D0E0F; right:215px; position:absolute; width:215px; z-index:99999; right:-99999px}
@@ -83,7 +84,7 @@ div{overflow:hidden}
 .title{border-bottom:4px solid #CF0000; font-family:'Arial, Helvetica, sans-serif'; font-size:20px; word-spacing:2px}
 .more{background:url("images/plus.png") no-repeat scroll 57px 9px #CF0000; color:#FFF; display:block; font-size:10px; font-weight:bold; padding:4px 20px; position:absolute; right:0; text-transform:uppercase; top:10px}
 .popular_more{background:url("images/plus.png") no-repeat scroll 57px 12px #CF0000; color:#FFF; display:block; font-size:10px; font-weight:bold; padding:7px 20px; text-transform:uppercase; width:74px; margin-top:10px}
-.single_left_coloum{margin-left:10px; width:20%}
+.single_left_coloum{margin-left:10px; width:31%; min-height: 230px}
 .readmore, .single_cat_right_content_meta span{color:#CF0000; font-size:10px; text-transform:uppercase; font-weight:bold; margin-right:20px}
 .readmore:hover, .single_cat_right_content_meta span:hover{color:#CF0000; text-decoration:underline}
 .gallery{}

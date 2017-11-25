@@ -1,26 +1,62 @@
-      <div class="logo floatleft"><a href="#"><img src="public/images/logo.png" alt="" /></a></div>
-      <div class="top_menu floatleft">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Subscribe</a></li>
-          <li><a href="#">Login</a></li>
-        </ul>
-      </div>
-      <div class="social_plus_search floatright">
-        <div class="social">
-          <ul>
-            <li><a href="#" class="twitter"></a></li>
-            <li><a href="#" class="facebook"></a></li>
-            <li><a href="#" class="feed"></a></li>
-          </ul>
-        </div>
-        <div class="search">
-          <form action="#" method="post" id="search_form">
-            <input type="text" value="Search news" id="s" />
-            <input type="submit" id="searchform" value="search" />
-            <input type="hidden" value="post" name="post_type" />
-          </form>
-        </div>
-      </div>
+<div class="logo floatleft"><a href="#"><img src="<?php echo $this->baseUrl('images/logo.png')?>" alt="" /></a></div>
+<div class="top_menu floatleft">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact us</a></li>
+    <li><a href="#">Subscribe</a></li>
+    </li>
+  </ul>
+</div>
+<div class="social_plus_search floatright">
+  <div class="social">
+    <ul>
+      <li><a href="#" class="twitter"></a></li>
+      <li><a href="#" class="facebook"></a></li>
+      <li><a href="#" class="feed"></a></li>
+    </ul>
+    <ul style="float: right;">
+      <li><a href="#" class="user" id="buttonShowFormLogin" 
+        onclick="user.showPopupLogin()" ></a>
+      </li>
+    </ul>
+  </div>
+  <div class="search">
+    <form action="#" method="post" id="search_form">
+      <input type="text" value="Search news" id="s" />
+      <input type="submit" id="searchform" value="search" />
+      <input type="hidden" value="post" name="post_type" />
+    </form>
+  </div>
+</div>
+<div id="areaFormLogin" class="popup hidden">
+  <div id="areaFormContent" class="popupContent">
+    <ul>
+      <li><input type="button" name="signUp" class="buttonUser" value="SignUp"></li>
+      <li><input type="button" name="Login" class="buttonUser" value="Login"></li>
+    </ul>
+    <form id="formLogin" class="formUser">
+      <table id="tableFormLogin" class="tableUser">
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <th><label for="userName">User Name</label></th>
+          <td><input type="text" name="userName"></td>
+        </tr>
+        <tr>
+          <th><label for="pass">Password</label></th>
+          <td><input type="text" name="pass"></td>
+        </tr>
+        <tr>
+          <td><input type="submit" name="Login"></td>
+        </tr>
+      </table>
+    </form>
+    <form id="formSignup" class="formUser">
+      <input type="text" name="userName">
+      <input type="text" name="pass">
+      <input type="submit" name="Login">
+    </form>
+  </div>
+</div>

@@ -10,11 +10,27 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        $bootstrap = $this -> getInvokeArg ( 'bootstrap' ) ;
-        $view = $bootstrap -> getResource ( 'category' ) ;
-        var_dump($view);
+        // $postTable = new Zend_Db_Table('post');
+        // $queryBestView = $postTable->fetchAll($postTable->select()->order('post_view DESC')->limit(0,2));
+        // $listBestView = $queryBestView->toArray();
+
+        // $queryNewest = $postTable->fetchAll($postTable->select()->order('id DESC')->limit(0,2));
+        // $listNewest = $queryNewest->toArray();
+
+        // $queryNewest = $postTable->fetchAll($postTable->select()->order('id DESC')->limit(0,2));
+        // $listNewest = $queryNewest->toArray();
+        
+        // $this->view->listBestView = $listBestView;
+        // $this->view->listNewest = $listNewest;
+    }
+
+    public function loginAction()
+    {
+        // action body
     }
 
 
 }
+
+
 
